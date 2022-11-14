@@ -1,0 +1,12 @@
+import axios from "axios";
+	
+
+	const LoginServicios = {}
+	const URL = "http://localhost:8080/login/";
+	    
+	LoginServicios.Login = (credenciales) => {
+	    return axios.post(URL, credenciales);
+	}
+	
+
+	export default LoginServicios;
